@@ -1,0 +1,229 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg,#0a0a0a,#3a4452);
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    /* background: inherit; */
+}
+
+
+
+.calculator{
+
+    color:white;
+    position: relative;
+    background:white;
+    padding: 20px;
+    border-radius:10px;
+    transition:0.5s
+   
+}
+
+.calculator form input{
+    position: relative;
+    border: 0;
+    outline: none;
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255, 255, 0.1),5px 5px 5px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    /* text-align: right; */
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+
+form input.operator{
+    color:greenyellow;
+}
+
+
+
+.calculator:hover{
+   background: var(--clr);
+   color: var(--clr);
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.calculator:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #0a0a0a;
+    border-radius: 10px;
+}
+
+
+
+.calculator {
+    position: relative;
+    z-index: 1;
+}
+
+.calculator i{
+    position: absolute;
+    inset: 0;
+    display: block;
+} 
+
+.calculator  i::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 50px;
+    height: 3px;
+    background: red;
+    transform: translateX(-50%) skew(325deg);
+    transition: 0.5s;
+
+}
+
+
+.calculator:hover i::before{
+    width: 20px;
+    left: 10%;
+}
+
+
+
+
+
+
+.calculator  i::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width:50px;
+    height: 3px;
+    background:red;
+    transform: translateX(-50%) skew(325deg);
+    transition: 0.5s;
+}
+
+
+.calculator:hover i::after{
+    width: 20px;
+    left: 90%;
+}
+
+
+
+.main{
+    position: absolute;
+    padding-left: 390px;
+    display:grid;
+    place-items: center;
+
+
+}
+
+
+.central-main{
+    width: 50%;
+    height: auto;
+    
+}
+
+.central-main ul{
+    display: flex;
+    justify-content: center;
+    font-weight: 400px;
+
+}
+
+
+.central-main ul li{
+    font-weight: 800px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding-left: 1rem;
+    color: #576574;
+    animation: light 1.3s linear infinite ;
+}
+
+.central-main ul li :first-child{
+    padding-left: 0%;
+}
+
+
+@-webkit-keyframes light{
+    0%{
+        color: #576574;
+        text-shadow: none;
+    }
+    90%{
+        color: #576574;
+        text-shadow: none;
+    }
+    100%{
+        color: #f1c40f;
+        text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400;
+    }         
+}
+
+
+.central-main ul li:nth-child(1){
+    animation-delay: 0s;
+}
+.central-main ul li:nth-child(2){
+    animation-delay: 0.1s;
+}
+.central-main ul li:nth-child(3){
+    animation-delay: 0.2s;
+}
+.central-main ul li:nth-child(4){
+    animation-delay: 0.3s;
+}
+.central-main ul li:nth-child(5){
+    animation-delay: 0.4s;
+}
+.central-main ul li:nth-child(6){
+    animation-delay: 0.5s;
+}
+.central-main ul li:nth-child(7){
+    animation-delay: 0.6s;
+}
+.central-main ul li:nth-child(8){
+    animation-delay: 0.7s;
+}
+.central-main ul li:nth-child(9){
+    animation-delay: 0.8s;
+}
+.central-main ul li:nth-child(10){
+    animation-delay: 0.9s;
+}
